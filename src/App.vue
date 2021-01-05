@@ -1,29 +1,34 @@
 <template>
   <div id="app">
     <nav>
-        <div class="navigation__logo">
-          Twotter
-        </div>
+        <router-link to="/">
+          <div class="navigation__logo">
+            Twotter
+          </div>
+        </router-link>
       <div class="navigation__user">
         {{ user.username }}
       </div>
     </nav>
-    <UserProfile />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import UserProfile from "./components/UserProfile"
+import { reactive } from 'vue'
 
 export default {
     name: 'App',
-    components: { UserProfile },
-    data () {
-      return {
+    setup() {
+
+      const state = reactive({
         user: {
           username: '_CastleAf'
         }
-      }
+      })
+
+      return state
+      
     }
 }
 </script>

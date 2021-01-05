@@ -1,5 +1,4 @@
-{
-  "users": [
+export const users = [
     {
       "id": 1,
       "username": "_MitchellRomney",
@@ -19,7 +18,9 @@
       "lastName": "Cole",
       "email": null,
       "isAdmin": false,
-      "twoots": []
+      "twoots": [
+        { "id": 1, "content": "GuacamolenNiggaPenis"  }
+    ]
     },
     {
       "id": 3,
@@ -28,7 +29,7 @@
       "lastName": "conner",
       "email": null,
       "isAdmin": false,
-      "twoots": []
+      "twoots": [{ "id": 1, "content": "GuacamolwdwdenNiggaPenis"  }]
     },
     {
       "id": 4,
@@ -39,5 +40,4 @@
       "isAdmin": false,
       "twoots": []
     }
-  ]
-}
+  ];
